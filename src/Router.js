@@ -4,6 +4,9 @@ import {
   Route
 } from "react-router-dom";
 import App from './App';
+import Home from './pages/Home';
+import Game from './pages/Game';
+import Leaderboard from './pages/Leaderboard';
 
 export default function Router(params) {
   //! use <BrowserRouter basename='/where-s-waldo'>
@@ -12,7 +15,9 @@ export default function Router(params) {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}>
-          {/* <Route index element={<Home />} /> */}
+          <Route index element={<Home />} />
+          <Route path='game' element={<Game />} />
+          <Route path='leaderboard' element={<Leaderboard />} />
         </Route>
       </Routes>
     </BrowserRouter>
