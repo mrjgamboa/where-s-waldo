@@ -6,7 +6,7 @@ import {
 import App from './App';
 import Home from './pages/Home';
 import Game from './pages/Game';
-import Leaderboard from './pages/Leaderboard';
+import Leaderboard from './pages/LeaderBoard';
 
 export default function Router(params) {
   //! use <BrowserRouter basename='/where-s-waldo'>

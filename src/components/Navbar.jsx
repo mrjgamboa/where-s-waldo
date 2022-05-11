@@ -2,7 +2,9 @@ export default function Navbar() {
   return (
     <nav>
       <ul>
-        <li></li>
+        <li>Home</li>
+        <li>Leader boards</li>
+        <li>About</li>
       </ul>
     </nav>
   );

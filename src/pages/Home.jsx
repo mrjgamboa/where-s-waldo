@@ -1,5 +1,7 @@
 export default function Home() {
   return (
-    <p>Hi from home</p>
+    <p>
+      Hi from home, 384
+    </p>
   );
 };
