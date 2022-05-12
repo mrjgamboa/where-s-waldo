@@ -18,6 +18,7 @@ export default function Router(params) {
           <Route index element={<Home />} />
           <Route path='game' element={<Game />} />
           <Route path='leaderboard' element={<Leaderboard />} />
+          <Route path='*' element={<Leaderboard />} />
         </Route>
       </Routes>
     </BrowserRouter>

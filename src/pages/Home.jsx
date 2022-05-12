@@ -1,7 +1,13 @@
+import Header from '../components/Header';
+
 export default function Home() {
   return (
-    <p>
-      Hi from home, 384
-    </p>
+    <>
+      <Header />
+      <div>selection 1</div>
+      <div>selection 1</div>
+      <div>selection 2</div>
+      <div>selection 3</div>
+    </>
   );
 };
