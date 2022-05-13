@@ -1,5 +1,7 @@
 export default function Leaderboard() {
   return (
-    <p>Hi from leaderboard</p>
+    <div>
+      <p>Hi from leaderboard</p>
+    </div>
   );
 };

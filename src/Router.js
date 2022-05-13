@@ -4,10 +4,11 @@ import {
   Route
 } from "react-router-dom";
 import App from './App';
+import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Game from './pages/Game';
 import Leaderboard from './pages/LeaderBoard';
-import NotFound from './pages/NotFound';
+import About from './pages/About';
 
 export default function Router() {
   //! use <BrowserRouter basename='/where-s-waldo'>
@@ -17,10 +18,11 @@ export default function Router() {
       <Routes>
         <Route path='/' element={<App />}>
           <Route index element={<Home />} />
-          <Route path='game' element={<Game />} />
+          <Route path='*' element={<NotFound />} />
           <Route path='leaderboard' element={<Leaderboard />} />
+          <Route path='about' element={<About />} />
+          <Route path='game/:theme' element={<Game />} />
         </Route>
-        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
