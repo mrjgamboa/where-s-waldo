@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.app {
-  background-color: 		hsl(0, 0%, 11%);
+.active {
+  @apply underline underline-offset-8;
 }

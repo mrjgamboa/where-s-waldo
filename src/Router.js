@@ -7,8 +7,9 @@ import App from './App';
 import Home from './pages/Home';
 import Game from './pages/Game';
 import Leaderboard from './pages/LeaderBoard';
+import NotFound from './pages/NotFound';
 
-export default function Router(params) {
+export default function Router() {
   //! use <BrowserRouter basename='/where-s-waldo'>
   //! when adding to gh-pages
   return (
@@ -18,8 +19,8 @@ export default function Router(params) {
           <Route index element={<Home />} />
           <Route path='game' element={<Game />} />
           <Route path='leaderboard' element={<Leaderboard />} />
-          <Route path='*' element={<Leaderboard />} />
         </Route>
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
