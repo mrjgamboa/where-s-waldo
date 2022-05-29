@@ -21,7 +21,8 @@ export default function Router() {
           <Route path='*' element={<NotFound />} />
           <Route path='leaderboard' element={<Leaderboard />} />
           <Route path='about' element={<About />} />
-          <Route path='game/:theme' element={<Game />} />
+          <Route path='game/:location' element={<Game />} />
+          <Route path='admin' element={<div></div>} />
         </Route>
       </Routes>
     </BrowserRouter>
