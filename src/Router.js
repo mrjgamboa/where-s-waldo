@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Game from './pages/Game';
 import Leaderboard from './pages/LeaderBoard';
 import About from './pages/About';
+import Admin from './pages/Admin';
 
 export default function Router() {
   //! use <BrowserRouter basename='/where-s-waldo'>
@@ -22,7 +23,7 @@ export default function Router() {
           <Route path='leaderboard' element={<Leaderboard />} />
           <Route path='about' element={<About />} />
           <Route path='game/:location' element={<Game />} />
-          <Route path='admin' element={<div></div>} />
+          <Route path='admin' element={<Admin />} />
         </Route>
       </Routes>
     </BrowserRouter>

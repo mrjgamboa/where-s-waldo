@@ -23,6 +23,3 @@ export default function App() {
     </div>
   );
 }
-
-// use grid not flex-box
-// add a wrapper?
