@@ -14,8 +14,9 @@ import Admin from './pages/Admin';
 export default function Router() {
   //! use <BrowserRouter basename='/where-s-waldo'>
   //! when adding to gh-pages
+  //! remove basename if starting in localhost
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/where-s-waldo'>
       <Routes>
         <Route path='/' element={<App />}>
           <Route index element={<Home />} />

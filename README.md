@@ -2,7 +2,7 @@
 
 Based on "[Where's Wally? (called Where's Waldo? in North America)](https://en.wikipedia.org/wiki/Where's_Wally%3F)". You’re given a photograph with tons of stuff going on and you’re meant to locate several familiar characters.
 
-**Live Demo:** 
+**Live Demo:** [https://mrjgamboa.github.io/where-s-waldo](https://mrjgamboa.github.io/where-s-waldo)
 
 ## Description
 
