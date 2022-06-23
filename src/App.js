@@ -1,9 +1,10 @@
 import Header from './components/Header';
 import { Outlet } from 'react-router-dom';
 import Footer from './components/Footer';
+import GameDataProvider from './contexts/GameData';
 
 export default function App() {
-  // wrap div inside context providers
+
   return (
     <div
       className='h-screen overflow-auto
@@ -16,7 +17,9 @@ export default function App() {
       >
         <Header />
         <main className='flex-1'>
-          <Outlet />
+          <GameDataProvider>
+            <Outlet />
+          </GameDataProvider>
         </main>
         <Footer />
       </div>

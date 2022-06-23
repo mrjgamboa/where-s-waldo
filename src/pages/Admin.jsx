@@ -159,7 +159,7 @@ function LevelListViewer({ array }) {
           {item.targets.map(target =>
             <div className='my-1' key={target.url}>
               <p className='capitalize'>target name: {target.name}</p>
-              <p>target URL: {target.url}</p>
+              <p className='break-words'>target URL: {target.url}</p>
               <p>target coordinates: {target.coords}</p>
             </div>
           )}
@@ -233,15 +233,10 @@ export default function Admin() {
 
   const createLevel = async e => {
     e.preventDefault();
-    const targetsArray = Object.values(targets).map(target => ({
-      name: target.tName,
-      url: target.tUrl,
-      coords: target.coords
-    }));
     const data = {
       name: level.location,
       url: level.imgUrl,
-      targets: targetsArray
+      targets: Object.values(targets)
     };
     await addDoc(collection(db, 'locations'), data);
     setLevelList([ ...levelList, data ]);

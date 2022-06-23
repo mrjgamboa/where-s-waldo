@@ -19,12 +19,12 @@ export default function Router() {
       <Routes>
         <Route path='/' element={<App />}>
           <Route index element={<Home />} />
-          <Route path='*' element={<NotFound />} />
           <Route path='leaderboard' element={<Leaderboard />} />
+          <Route path='location/:location' element={<Game />} />
           <Route path='about' element={<About />} />
-          <Route path='game/:location' element={<Game />} />
           <Route path='admin' element={<Admin />} />
         </Route>
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
