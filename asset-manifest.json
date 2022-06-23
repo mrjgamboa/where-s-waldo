@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/where-s-waldo/static/css/main.e2349d68.css",
+    "main.js": "/where-s-waldo/static/js/main.7b04512f.js",
+    "static/js/787.2b752951.chunk.js": "/where-s-waldo/static/js/787.2b752951.chunk.js",
+    "index.html": "/where-s-waldo/index.html",
+    "main.e2349d68.css.map": "/where-s-waldo/static/css/main.e2349d68.css.map",
+    "main.7b04512f.js.map": "/where-s-waldo/static/js/main.7b04512f.js.map",
+    "787.2b752951.chunk.js.map": "/where-s-waldo/static/js/787.2b752951.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2349d68.css",
+    "static/js/main.7b04512f.js"
+  ]
+}
